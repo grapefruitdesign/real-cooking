@@ -1,0 +1,1294 @@
+@import "partials/_base";
+
+
+
+
+//************************************************************************************************
+//************************************************************************************************
+// HOME
+//************************************************************************************************
+//************************************************************************************************
+#home-hero-section {
+	@extend .nav-spacer;
+
+	@include resizeDivToBgImg('../../site_assets/images/homepage/LandingPg.jpg', 1300, 901);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/homepage/LandingPgMobile.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/homepage/LandingPgMobile.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/homepage/LandingPgMobile.jpg', 768, 1024) };
+
+
+	h1 {
+		font-size: 3.5vw;
+
+		@include respond-to( xxs ) { font-size: 5.5vw; }
+ 		@include respond-to( xs ) { font-size: 5.5vw; }
+ 		@include respond-to( sm ) { font-size: 5.5vw; }
+
+	}
+}
+
+
+
+#home-section-1 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/homepage/sec_1_bg.jpg', 1300, 676);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/homepage/sec_1_bg_mobile.jpg', 570, 570) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/homepage/sec_1_bg_mobile.jpg', 570, 570) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/homepage/sec_1_bg_mobile.jpg', 570, 570) };
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-top;
+
+	}
+}
+
+
+
+#home-section-2 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/homepage/sec_2_bg.jpg', 1300, 675);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/homepage/sec_2_bg_mobile.jpg', 570, 570) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/homepage/sec_2_bg_mobile.jpg', 570, 570) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/homepage/sec_2_bg_mobile.jpg', 570, 570) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-bottom;
+	}
+}
+
+
+
+#social-homepage {
+	background: $rc_grey;
+	@extend .border-top;
+
+ 	h2 {
+ 		font-size: 2em;
+ 		text-align: center;
+ 		margin: 35px 0;
+
+ 		@include respond-to( xxs ) { font-size: 4vw; }
+ 		@include respond-to( xs ) { font-size: 4vw; }
+ 	}
+}
+
+
+
+
+
+
+
+
+//************************************************************************************************
+//************************************************************************************************
+// REAL COOKING | PRODUCT INDEX.HTML
+//************************************************************************************************
+//************************************************************************************************
+#realcooking-section-1 {
+	@extend .section-base;
+	// @extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_1_bg.jpg', 1300, 684);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_1_bg_mobile.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_1_bg_mobile.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_1_bg_mobile.jpg', 768, 1024) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-top;
+
+	}
+}
+
+
+
+#realcooking-section-2 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_2_bg.jpg', 1300, 682);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_2_bg_mobile.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_2_bg_mobile.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_2_bg_mobile.jpg', 768, 1024) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-top;
+	}
+}
+
+
+
+#realcooking-section-3 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_3_bg.jpg', 1300, 676);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_3_bg_mobile_2.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_3_bg_mobile_2.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_3_bg_mobile_2.jpg', 768, 1024) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-top;
+	}
+}
+
+
+#realcooking-section-4 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_4_bg.jpg', 1300, 678);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_4_bg_mobile.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_4_bg_mobile.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/real_cooking/sec_4_bg_mobile.jpg', 768, 1024) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-top;
+	}
+}
+
+
+#realcooking-refills-section {
+	background: $rc_grey;
+	@extend .border-top;
+
+ 	h2 {
+ 		text-align: center;
+ 		letter-spacing: 0.2em;
+ 		margin: 3vw 0 2vw 0;
+ 	}
+}
+
+
+
+
+
+
+
+
+//************************************************************************************************
+//************************************************************************************************
+// PRODCUT | ULTIMATE BAKING SET
+//************************************************************************************************
+//************************************************************************************************
+#ultimate-hero-section {
+	// @extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/home_img.jpg', 1300, 904);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/home_img_mobile.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/home_img_mobile.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/home_img_mobile.jpg', 768, 1024) };
+
+
+	h1 {
+		@extend .dropshadow-text;
+		//font-size: 2.2em;
+		color: white;
+
+
+		.to-serif {
+			font-size: 0.7em;
+		}
+
+	}
+
+}
+
+
+
+#ultimate-section-1 {
+	@extend .section-base;
+	@extend .border-top;
+	max-height: 340px;
+
+
+	@include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_1_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_1_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_1_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_1_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-middle;
+
+	}
+}
+
+
+
+#ultimate-section-2 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_2_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_2_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_2_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_2_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-middle;
+	}
+}
+
+
+#ultimate-section-3{
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_3_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_3_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_3_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_3_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-middle;
+
+	}
+}
+
+#ultimate-section-4 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_4_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_4_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_4_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_4_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-middle;
+
+	}
+}
+
+
+
+#ultimate-section-5 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_5_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_5_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_5_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_5_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-middle;
+	}
+}
+
+
+#ultimate-section-6{
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_6_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_6_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_6_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_6_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-middle;
+
+	}
+}
+
+
+
+
+
+
+
+//************************************************************************************************
+//************************************************************************************************
+// PRODUCT | DELUXE COOKIES BAKING SET
+//************************************************************************************************
+//************************************************************************************************
+#deluxe-hero-section {
+	// @extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/home_img.jpg', 1300, 904);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/home_img_mobile.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/home_img_mobile.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/home_img_mobile.jpg', 768, 1024) };
+
+	h1 {
+		@extend .dropshadow-text;
+		// font-size: 2.2em;
+		color: white;
+
+
+		.to-serif {
+			font-size: 0.7em;
+		}
+
+	}
+
+}
+
+
+
+#deluxe-section-1 {
+	@extend .section-base;
+	@extend .border-top;
+	max-height: 340px;
+
+
+	@include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_1_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_1_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_1_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_1_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-middle;
+
+	}
+}
+
+
+
+#deluxe-section-2 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_2_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_2_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_2_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_2_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-middle;
+	}
+}
+
+
+#deluxe-section-3{
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_3_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_3_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_3_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_3_bg_mobile.jpg', 768, 768) };
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-middle;
+
+	}
+}
+
+#deluxe-section-4 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_4_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_4_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_4_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_4_bg_mobile.jpg', 768, 768) };
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-middle;
+
+	}
+}
+
+
+
+#deluxe-section-5 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_5_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_5_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_5_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/delux_cookie/sec_5_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-middle;
+	}
+}
+
+
+
+
+
+
+
+
+//************************************************************************************************
+//************************************************************************************************
+// PRODUCTS | CAKE POPS & CONES
+//************************************************************************************************
+//************************************************************************************************
+#cakepops-hero-section {
+	// @extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/home_img.jpg', 1300, 904);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/home_img_mobile.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/home_img_mobile.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/home_img_mobile.jpg', 768, 1024) };
+
+	h1 {
+		@extend .dropshadow-text;
+		// font-size: 2.2em;
+		color: white;
+
+
+		.to-serif {
+			font-size: 0.7em;
+		}
+
+	}
+
+}
+
+
+
+#cakepops-section-1 {
+	@extend .section-base;
+	@extend .border-top;
+	max-height: 340px;
+
+
+	@include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_1_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_1_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_1_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_1_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-middle;
+
+	}
+}
+
+
+
+#cakepops-section-2 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_2_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_2_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_2_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_2_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-middle;
+	}
+}
+
+
+#cakepops-section-3{
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_3_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_3_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_3_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_3_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-middle;
+
+	}
+}
+
+#cakepops-section-4 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_4_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_4_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_4_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_4_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-middle;
+
+	}
+}
+
+
+
+#cakepops-section-5 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_5_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_5_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_5_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/cake_pops_cones/sec_5_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-middle;
+	}
+}
+
+
+
+
+
+
+
+
+//************************************************************************************************
+//************************************************************************************************
+// PRODUCTS | MINI DONUTS BAKING SET
+//************************************************************************************************
+//************************************************************************************************
+#donuts-hero-section {
+	// @extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/mini_donuts/home_img.jpg', 1300, 904);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/mini_donuts/home_img_mobile.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/mini_donuts/home_img_mobile.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/mini_donuts/home_img_mobile.jpg', 768, 1024) };
+
+	h1 {
+		@extend .dropshadow-text;
+		// font-size: 2.2em;
+		color: white;
+
+
+		.to-serif {
+			font-size: 0.7em;
+		}
+
+	}
+
+}
+
+
+
+#donuts-section-1 {
+	@extend .section-base;
+	@extend .border-top;
+	max-height: 340px;
+
+
+	@include resizeDivToBgImg('../../site_assets/images/products/mini_donuts/sec_1_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/mini_donuts/sec_1_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/mini_donuts/sec_1_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/mini_donuts/sec_1_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-middle;
+
+	}
+}
+
+
+
+#donuts-section-2 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/mini_donuts/sec_2_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/mini_donuts/sec_2_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/mini_donuts/sec_2_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/mini_donuts/sec_2_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-middle;
+	}
+}
+
+
+
+
+
+
+//************************************************************************************************
+//************************************************************************************************
+// PRODUCT | CHOCOLATE PEN
+//************************************************************************************************
+#pen-section-1 {
+	@extend .section-base;
+	// @extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_1_bg.jpg', 1300, 679);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_1_bg_mobile_2.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_1_bg_mobile_2.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_1_bg_mobile_2.jpg', 768, 1024) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-top;
+
+	}
+}
+
+
+
+#pen-section-2 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_2_bg.jpg', 1300, 679);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_2_bg_mobile_2.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_2_bg_mobile_2.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_2_bg_mobile_2.jpg', 768, 1024) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-top;
+
+	    /* @include respond-to( xxs ) { top: 24vw; }
+		@include respond-to( xs ) { top: 24vw; }
+		@include respond-to( sm ) { top: 24vw; } */
+
+	}
+}
+
+
+
+#pen-section-3 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_3_bg.jpg', 1300, 679);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_3_bg_mobile_2.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_3_bg_mobile_2.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_3_bg_mobile_2.jpg', 768, 1024) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-top;
+
+		h4{
+			@include respond-to( xxs ) { position: absolute; right: 0; width: 45vw; }
+			@include respond-to( xs ) { position: absolute; right: 0; width: 45vw; }
+			@include respond-to( sm ) { position: absolute; right: 0; width: 45vw; }
+		}
+
+	}
+}
+
+
+#pen-section-4 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_4_bg.jpg', 1300, 668);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_4_bg_mobile_2.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_4_bg_mobile_2.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/chocolate_pen/sec_4_bg_mobile_2.jpg', 768, 1024) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-top;
+
+		h4{
+			@include respond-to( xxs ) { width: 60vw; }
+			@include respond-to( xs ) { width: 60vw; }
+			@include respond-to( sm ) { width: 60vw; }
+		}
+	}
+}
+
+
+#pen-refills-section {
+	background: $rc_grey;
+	@extend .border-top;
+
+ 	h2 {
+ 		text-align: center;
+ 		letter-spacing: 5px;
+ 	}
+}
+
+
+
+
+
+
+
+//************************************************************************************************
+//************************************************************************************************
+// SUPPORT | HOME
+//************************************************************************************************
+//************************************************************************************************
+#support-container {
+	padding-top: 4vw;
+
+	@include respond-to( xxs ) { padding-top: 3vw; }
+	@include respond-to( xs ) { padding-top: 3vw; }
+	@include respond-to( sm ) { padding-top: 3vw; }
+	@include respond-to( md ) { padding-top: 4vw; }
+
+	.support-section {
+		h2 {
+			font-size: 1.6em;
+			color: $rc_blue;
+			padding-bottom: 3px;
+			// border-bottom: 1px solid;
+		}
+
+
+		.section-title {
+			margin: 20px 0 20px 0;
+		}
+
+	}
+
+
+	.support-item {
+	    height: 100%;
+		margin: 0 0 30px 0;
+
+		a {
+			h3 {
+				margin: 0;
+				font-size: 0.9em;
+				padding: 0;
+				text-align: left;
+
+				&:after {
+				    font-family: VideoJS;
+					padding-left: 5px;
+					content: "\f101";
+					font-size: 13px;
+					position: absolute;
+					//content: "\25b6";
+				}
+
+			}
+
+			&:hover {
+				h3 {
+					color: $rc_pink;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+//************************************************************************************************
+//************************************************************************************************
+// PRODUCT | PRINCESS CAKES
+//************************************************************************************************
+//************************************************************************************************
+#princess-hero-section {
+	// @extend .border-top;
+
+    @include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessCakeLandingPage.jpg', 1300, 904);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessMobile01.jpg', 768, 1024) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessMobile01.jpg', 768, 1024) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessMobile01.jpg', 768, 1024) };
+
+    .hero-title-copy {
+		@extend .hero-title-copy-right-middle;
+
+
+	h1 {
+		@extend .dropshadow-text;
+		//font-size: 2.2em;
+		color: white;
+
+
+		.to-serif {
+			font-size: 0.7em;
+		}
+
+	}
+
+}
+
+
+
+#princess-section-1 {
+	@extend .section-base;
+	@extend .border-top;
+	max-height: 340px;
+
+
+	@include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessCakes2full.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessMobile02.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessMobile02.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessMobile02.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-middle;
+
+	}
+}
+
+
+
+#princess-section-2 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessCakes3full.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessMobile03.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessMobile03.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessMobile03.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-middle;
+	}
+}
+
+
+#princess-section-3{
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessCakes4full.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessMobile04b.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessMobile04b.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/princess_cakes/PrincessMobile04b.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-middle;
+
+	}
+}
+
+#princess-section-4 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_4_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_4_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_4_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_4_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-middle;
+
+	}
+}
+
+
+
+#princess-section-5 {
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_5_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_5_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_5_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_5_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-left-middle;
+	}
+}
+
+
+#princess-section-6{
+	@extend .section-base;
+	@extend .border-top;
+
+	@include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_6_bg.jpg', 1300, 340);
+
+	@include respond-to( xxs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_6_bg_mobile.jpg', 768, 768) };
+	@include respond-to( xs ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_6_bg_mobile.jpg', 768, 768) };
+	@include respond-to( sm ) { @include resizeDivToBgImg('../../site_assets/images/products/ultimate_baking/sec_6_bg_mobile.jpg', 768, 768) };
+
+
+	.hero-title-copy {
+		@extend .hero-title-copy-right-middle;
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//************************************************************************************************
+//************************************************************************************************
+// SUPPORT | PAGES
+//************************************************************************************************
+//************************************************************************************************
+#support-page-title {
+	position: relative;
+	height: 53px;
+	background: $nav_bg_color;
+
+
+	h1 {
+		position: relative;
+	    top: 20px;
+		text-align: center;
+		font-size: 1.0em;
+	}
+}
+
+
+
+.section-title {
+	margin: 20px 0 0 0;
+}
+
+
+
+#faqs-container {
+	@extend .border-top;
+	padding-top: 2vw;
+
+	@include respond-to( xxs ) { padding-top: 5vw};
+	@include respond-to( xs ) { padding-top: 5vw };
+	@include respond-to( sm ) { padding-top: 4vw };
+
+
+
+	.support-faqs {
+
+
+		.question-container {
+			margin: 0 0 5px 0;
+
+
+			&:last-of-type {
+				margin: 0 0 50px 0;
+			}
+
+
+			.question {
+				cursor: pointer;
+			    margin: 0 0 0 25px;
+    			text-indent: -25px;
+
+
+				h2 {
+					font-size: 0.9em;
+				}
+
+
+				h2:before {
+					content: "Q: ";
+				}
+
+
+				span {
+					white-space: nowrap;
+				}
+
+
+				span.closed:after {
+					content: " \25bc";
+				}
+
+
+				span.open:after {
+					content: " \25b2";
+				}
+
+			}
+
+
+			.answer {
+			    // text-indent: 26px;
+		        margin: 0 0 0 26px;
+			    overflow: hidden;
+
+
+				p {
+					font-size: 0.9em;
+				}
+
+				a {
+					font-size: 0.9em;
+				}
+
+				.answer-link {
+					text-decoration: underline;
+				}
+
+			}
+
+
+
+			.answer-closed {
+				height: 0;
+			}
+
+
+			.answer-open {
+				height: auto;
+			}
+
+		}
+
+	}
+
+}
+
+
+#support-section-video {
+	@extend .border-top;
+	padding: 30px 0;
+
+	h1 {
+		margin-bottom: 25px;
+
+	}
+
+	#support-vid-container {
+
+
+		#support-vid {
+			width: 100%;
+		}
+
+	}
+
+}
+
+
+#support-instructions, #support-form {
+
+
+	.container {
+		padding-top: 2vw;
+
+		@include respond-to( xxs ) { padding-top: 7vw};
+    	@include respond-to( xs ) { padding-top: 6vw };
+    	@include respond-to( sm ) { padding-top: 6vw };
+	}
+}
+
+
+#support-instructions {
+	@extend .border-top;
+	min-height: 255px;
+
+	.download-btn {
+		height: 30px;
+		width: 152px;
+		cursor: pointer;
+
+		a {
+		    left: 34px;
+		    top: 49px;
+		    position: absolute;
+		}
+	}
+}
+
+
+
+#support-form {
+	@extend .border-top;
+
+	fieldset {
+	    margin: 15px;
+	}
+
+	button {
+		font-family: NotoSerif_Itl, Times, serif;
+
+		&:hover{
+			background: $nav_bg_color;
+		}
+	}
+
+	.dropdown-toggle:focus, .dropdown-toggle.active:active {
+		background: $nav_bg_color;
+	}
+
+	.form-control {
+	    font-family: NotoSerif_Itl, Times, serif;
+		margin: 0 0 15px 0;
+		color: $rc_blue;
+		border-radius: 0px;
+		box-shadow: none;
+		border: 1px solid $rc_blue;
+	}
+
+
+	.dropdown {
+		padding: 0 15px;
+    	width: 100%;
+	}
+
+
+	.dropdown-menu {
+	    top: 33px;
+	    width: 110% ;
+	    width: calc( 100% - 30px );
+	    margin: 0 0 0 15px;
+	    left: 0px;
+	    border: 1px solid $rc_blue;
+	    border-radius: 0px;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+
+
+	    li {
+	    	padding: 6px 0;
+	    }
+
+
+	    a, a:link {
+	    	font-family: NotoSerif_Itl, Times, serif;
+	    	color: $rc_blue;
+	    	white-space: normal;
+
+	    	@include respond-to( xxs ) { font-size: 3.5vw};
+	    	@include respond-to( xs ) { font-size: 2.6vw};
+	    }
+
+	    a:hover {
+	    	background: $nav_bg_color;
+	    }
+	}
+
+	textarea {
+	    resize: none;
+		height: 150px;
+	}
+
+	.btn {
+		top: -7px;
+	    text-align: inherit;
+	    width: 100%;
+	    height: 34px;
+	    padding-top: 7px;
+	    margin: 0 0 15px 0;
+	    color: #76d2d7;
+	    border-radius: 0px;
+	    box-shadow: none;
+	    border: 1px solid $rc_blue;
+
+	    .caret {
+		    position: absolute;
+		    top: 16px;
+		    right: 30px;
+	    	margin-left: 0;
+		    color: $rc_blue;
+		    text-align: right;
+	    }
+	}
+
+	#form-submit-btn {
+		width: 102px;
+		height: 30px;
+		margin: 0 0 42px 0;
+
+		a {
+			top: 15px;
+		}
+	}
+
+}
+
+
+
+.product-selected {
+    color: $rc_blue !important;
+}
+
+
+.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+	background: $nav_bg_color;
+}
+
+
+/* input[placeholder], [placeholder], *[placeholder] {
+   color: $rc_blue;
+} */
+
+
+#form-response {
+	margin: 35px;
+	background: white;
+	border: 1px solid $rc_blue;
+	display: none;
+
+
+	p {
+		color: $rc_blue;
+	    padding: 20px;
+    	margin: 0;
+	}
+
+}
+
+
+::-webkit-input-placeholder { color: $rc_blue !important; }
+:-moz-placeholder { color: $rc_blue !important;}
+::-moz-placeholder {color: $rc_blue !important;}
+:-ms-input-placeholder {color: $rc_blue !important;}

@@ -1,0 +1,80 @@
+
+$break-xxs : 380px;
+$break-xs : 580px; // 480px
+$break-sm : 767px; //<------------------------ MOBILE BREAK POINT ??????
+$break-md : 991px;
+$break-lg : 1200px;
+//$break-lg : 1200px;
+
+
+
+@mixin respond-to( $media )
+{
+	@if $media == xxs {
+		@media only screen and (max-width: $break-xxs) { @content; }
+
+	}
+
+	@if $media == xs {
+		@media only screen and (min-width: $break-xxs + 1) and (max-width: $break-xs) { @content; }
+
+	}
+
+	@else if $media == sm {
+		@media only screen and (min-width: $break-xs + 1) and (max-width: $break-sm) { @content; } //<------------------------ MOBILE BREAK POINT
+
+	}
+
+	@else if $media == sm_plusone {
+		@media only screen and (min-width: $break-xs + 1) and (max-width: $break-sm + 1) { @content; } //<------------------------ MOBILE BREAK POINT (iPad Nav Fix)
+
+	}
+
+	@else if $media == md {
+		@media only screen and (min-width: $break-sm + 1) and (max-width: $break-md) { @content; }
+
+	}
+
+	@else if $media == lg {
+		@media only screen and (min-width: $break-md + 1) and (max-width: $break-lg) { @content; }
+
+	}
+
+	@else if $media == xl {
+		@media only screen and (min-width: $break-lg + 1) { @content; }
+
+	}
+
+}
+
+
+
+/*
+@mixin respond-to( $media )
+{
+	@if $media == xs {
+		@media only screen and (max-width: $break-xs) { @content; }
+
+	}
+
+	@else if $media == sm {
+		@media only screen and (min-width: $break-xs + 1) and (max-width: $break-md - 1) { @content; }
+
+	}
+
+	@else if $media == md {
+		@media only screen and (min-width: $break-sm + 1) and (max-width: $break-lg - 1) { @content; }
+
+	}
+
+	@else if $media == lg {
+		@media only screen and (min-width: $break-md + 1) and (max-width: $break-xl - 1) { @content; }
+
+	}
+
+	@else if $media == xl {
+		@media only screen and (min-width: $break-xl) { @content; }
+
+	}
+
+}*/

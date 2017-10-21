@@ -1,0 +1,103 @@
+.video-js {
+	background-color: white !important;
+}
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+
+
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+
+
+#inline-vid {
+	@extend .video-js;
+	
+	width: 100% !important;
+}
+
+
+#modal-vid-1, #modal-vid-2, #modal-vid-3, #modal-vid-4  {
+    @extend .video-js;
+
+    width: 80%;
+	margin: 0 auto;
+  	pointer-events: all;
+
+}
+
+
+.modal {
+	z-index: 1050;
+
+	button {
+		color: white;
+		pointer-events: all;
+	}
+
+	button:hover {
+		color: $rc_blue;
+		opacity: 1;
+	}
+
+}
+
+
+.video-js {
+	position: relative !important;
+
+	
+    .vjs-big-play-button {
+	    // top: 46%;
+	    // left: 46%;
+	    border: 0.06666em solid $rc_blue;
+	    background-color: #3d3d3d;
+	    background-color: rgba(255, 255, 255, 0.2);
+	    -webkit-border-radius: 0;
+	    -moz-border-radius: 0;
+	    border-radius: 0;
+	}
+
+    .vjs-control-bar {
+	    background-color: black;
+	    background-color: rgba(0, 0, 0, 0.5);
+	}
+
+
+	/* .vjs-load-progress {
+		background-color: #c2c2c2;
+		background-color: rgba(0, 255, 0, 0.4);
+
+		div {
+			background-color: #c2c2c2;
+			background-color: rgba(255, 255, 255, 0.4);
+		}
+	} */
+
+	.vjs-play-progress {
+		color: $rc_blue;
+		background-color: $rc_blue;
+	}
+
+	.vjs-slider {
+	    outline: 0;
+	    position: relative;
+	    cursor: pointer;
+	    padding: 0;
+	    margin: 0 0.45em 0 0.45em;
+	    background-color: gray;
+	    background-color: rgba(255, 255, 255, 0.2);
+	} 
+
+}
+
+
+

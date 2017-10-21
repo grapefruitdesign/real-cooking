@@ -1,0 +1,582 @@
+@import "../../_lib/normalize/_normalize";
+@import "../../_lib/bootstrap-scss/css/_bootstrap";
+
+@import "../modules/_media_queries";
+@import "../modules/_fonts";
+@import "../modules/_colors";
+@import "../modules/_video";
+@import "../modules/_background-img";
+
+@import "../partials/_navigation";
+@import "../partials/_retail-footer";
+@import "../partials/_connect-footer";
+
+
+
+
+
+// 
+// DOM ELEMENT RULES
+// 
+body {
+	background: $background_color;	
+	color: white;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+  	height: 100%;
+	
+	z-index: 10;
+}
+
+
+* {
+	font-family: Monsterrat_Rg, Helvetica, sans-serif;
+	letter-spacing: 0.2em; // 0.15em
+}
+
+
+h1, h2, h3, h4 {
+	color: $rc_blue;
+	font-weight: 100;
+}
+
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+	//@include respond-to( sm ) { font-size: 3.6vw; }
+}
+
+
+h3 {
+	margin-top: 15px;
+	margin-bottom: 0;
+	font-size: 1em;
+	text-align: center;
+	padding-bottom: 16px;
+	pointer-events: none;
+}
+
+
+a, a:hover, a:focus, a:link, a:visited {
+	text-decoration: none;
+	color: $rc_blue;
+	outline: none;
+
+	&:hover svg {
+		fill: $rc_pink;
+	}
+}
+
+
+a:hover {
+	color: $rc_pink;
+}
+
+
+p {
+	color: $rc_blue;
+}
+
+
+hr {
+	border: none;
+
+	@include respond-to( xxs ) { margin-top:4vw; margin-bottom:4vw; }
+    @include respond-to( xs ) { margin-top:2vw; margin-bottom:2vw; }
+	@include respond-to( sm ) { margin-top:2vw; margin-bottom:2vw; }
+}
+
+svg {
+	fill: $rc_blue;
+}
+
+ul {
+
+	li {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		color: $rc_blue;
+
+
+		&:before {
+			color: $rc_blue;
+		}
+	}
+}
+
+
+
+
+
+
+
+// 
+// BOOTSTRAP
+// 
+.row-remove-margin {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+
+
+
+
+
+// 
+// GLOBAL CLASSES
+// 
+
+.panel-container {
+	background: $background_color;
+	box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.border-top {
+	border-top: 1px solid $rc_blue;
+}
+.border-bottom {
+	border-bottom: 1px solid $rc_blue;
+}
+
+
+.nav-spacer {
+	margin-top: 89px;
+}
+
+
+.to-serif {
+	font-family: NotoSerif_Itl, Times, serif;
+}
+
+.to-underline {
+	font-family: NotoSerif_Itl, Times, serif;
+	text-decoration: underline;
+}
+
+
+.dropshadow-text {
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+.section-base {
+	position: relative;
+	height: 100%;
+}
+
+
+// TAKEN FROM .hero-title-copy .title-button....this can possibly replace it as global button rules
+.box-button {
+	position: relative; /* absolute */
+	top: 35px;
+	padding: 15px 25px;
+	font-size: 1em;
+	cursor: pointer;
+	border: 1px solid $rc_blue;
+
+	@include respond-to( xxs ) { font-size: 3vw; top: 2vw; padding: 10px 20px; }
+	@include respond-to( xs ) { font-size: 3vw; top: 2vw; padding: 10px 20px; }
+	@include respond-to( sm ) { font-size: 3vw; top: 2vw; padding: 10px 20px; }
+
+	&:hover {
+		color: $rc_pink;
+		border: 1px solid $rc_pink;
+	}
+}
+
+
+.close {
+    top: -23px;
+    position: relative;
+    right: 10vw;
+    color: $rc_blue;
+    opacity: 1;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+.home-section {
+	@extend .section-base;
+
+	@include respond-to( xl ) { .img-responsive { width: 100%; height: auto; min-width: 1200px; min-height: 664px; } }
+
+	h1 {
+		position: absolute;
+	    width: 100%;
+	    top: 5vw; // iPhone 5S // iOS 7/iOS 8 Backup 
+	    top: calc( 10vw - 80px );
+	    text-align: center;
+
+	    @include respond-to( xxs ) { font-size: 4vw; top: calc( 10vw - 30px );}
+	    @include respond-to( xs ) { font-size: 4vw; top: calc( 10vw - 30px );}
+		@include respond-to( sm ) { font-size: 4vw; top: calc( 10vw - 40px );}
+
+		.to-serif {
+			font-weight: lighter;
+		}
+	}
+}
+
+
+
+.hero-title-copy {
+	position: absolute;
+	margin: 0;
+	font-family: Monsterrat_Rg, Helvetica, sans-serif;
+	color: $rc_blue;
+
+
+	h2{
+	    margin: 0 0 1.5vw 0;
+		font-size: 2.8vw;
+		
+		@include respond-to( xxs ) { font-size: 4.5vw; }
+		@include respond-to( xs ) { font-size: 4.5vw; }
+		@include respond-to( sm ) { font-size: 4.5vw; }
+	}
+
+	h4 {
+		font-size: 1em;
+		margin-top: 30px;
+
+		@include respond-to( xxs ) { font-size: 3vw; margin-top: 3vw; }
+		@include respond-to( xs ) { font-size: 3vw; margin-top: 3vw; }
+		@include respond-to( sm ) { font-size: 3vw; margin-top: 3vw;}
+		@include respond-to( md ) { font-size: 1.4vw; }
+	}
+
+	.watch-link {
+		margin-left: 2px;
+		font-size: 1em;
+		cursor: pointer;
+		border-bottom: 1px solid;
+
+		@include respond-to( xxs ) { font-size: 3vw; }
+		@include respond-to( xs ) { font-size: 2.4vw; }
+		@include respond-to( sm ) { font-size: 2.1vw; }
+		@include respond-to( md ) { font-size: 1.6vw; }
+
+		&:hover {
+			color: $rc_pink;
+		}
+	}
+
+	.title-button {
+		position: relative; /* absolute */
+		top: 35px;
+		padding: 15px 25px;
+		font-size: 1em;
+		cursor: pointer;
+		border: 1px solid $rc_blue;
+
+		@include respond-to( xxs ) { font-size: 3vw; top: 2vw; padding: 7px 15px; }
+		@include respond-to( xs ) { font-size: 2vw; top: 2vw; padding: 10px 20px; }
+		@include respond-to( sm ) { font-size: 1.8vw; top: 2vw; padding: 10px 20px; }
+		@include respond-to( md ) { font-size: 1.5vw; top: 2vw; padding: 10px 20px; }
+
+		&:hover {
+			color: $rc_pink;
+			border: 1px solid $rc_pink;
+		}
+	}
+}
+
+
+.hero-title-copy-left-top {
+    top: 7vw;
+    left: 7vw;
+}
+
+.hero-title-copy-right-top {
+    text-align: right;
+    top: 7vw;
+    right: 7vw;
+    // width: 60%;
+}
+
+.hero-title-copy-right-bottom {
+    text-align: right;
+    right: 7vw;
+    bottom: 9vw;
+    // width: 75%;
+
+    // @include respond-to( xxs ) { width: 183px; }
+
+}
+
+.hero-title-copy-left-middle {
+    top: 0;
+    left: 7vw;
+    margin-top: 5vw;
+}
+
+.hero-title-copy-right-middle {
+    text-align: right;
+    right: 7vw;
+    top: 0;
+    margin-top: 4.4vw;
+}
+
+
+
+
+
+
+
+
+.section-btn-group {
+	padding: 0 10px 10px;
+
+
+	.row {
+		margin-top: 15px;
+
+
+		.section-btn {
+			padding: 5px;
+
+
+			.section-btn-contents {
+				background: $rc_blue;
+
+
+
+				h3 {
+					color: $section_btn_font_color;
+
+					@include respond-to( xxs ) { font-size: 3vw; }
+					@include respond-to( xs ) { font-size: 3vw; }
+					@include respond-to( md ) { font-size: 1.3vw; }
+				}
+
+				img {
+					width: 100%;
+					max-height: 500%;
+					margin: 0 auto;
+				    border: 1px solid #ddd;
+				}
+			}
+			
+			.selectable:hover{
+				background: $rc_pink;
+			}
+		}
+	}
+}
+
+
+
+.refills-btn-group {
+	padding: 0 10px 20px;  // 0 20px 20px
+
+
+	.row {
+		margin-top: 15px;
+
+
+		.section-btn {
+			padding: 5px;
+
+			// @include respond-to( xxs ){ height: 50vw; };
+			// @include respond-to( xs ){ height: 51vw; };
+			// @include respond-to( sm ){ height: 42vw; };
+
+
+			.section-btn-contents {
+				background: $refills_btn_bg_color;
+				padding: 18px; // 17px 22px
+				
+				// @include respond-to( xxs ){ height: 48vw; padding: 13px };
+				// @include respond-to( xs ){ height: 49vw; padding: 13px };
+				// @include respond-to( sm ){ height: 41vw; padding: 13px };
+				// @include respond-to( md ){ height: 24vw; };
+
+				
+				&:hover {
+					h3 {
+						.to-underline {
+							color: $rc_pink;
+						}
+					}
+				}
+
+
+				h3 {
+					color: $rc_blue;
+					padding: 0 0 4px 0;
+					letter-spacing: 0.06em;
+					font-size: 1.2vw;
+
+					@include respond-to( xxs ) { font-size: 4vw; }
+					@include respond-to( xs ) { font-size: 3vw; }
+					@include respond-to( sm ) { font-size: 3vw; }
+					@include respond-to( md ) { font-size: 1.2vw; }
+					@include respond-to( lg ) { font-size: 1.2vw; }
+					@include respond-to( xl ) { font-size: 1.2vw; }
+
+
+					.to-serif {
+						position: relative;
+						top: 5px;
+						font-size: 1.0vw;
+						letter-spacing: 0.05em;
+
+						@include respond-to( xxs ) { font-size: 3vw; }
+						@include respond-to( xs ) { font-size: 2.5vw; }
+					 	@include respond-to( sm ) { font-size: 2vw; }
+						@include respond-to( md ) { font-size: 1.2vw; }
+						/* @include respond-to( lg ) { font-size: 1.4vw; }
+						@include respond-to( xl ) { font-size: 1.4vw; } */
+
+					}
+
+					.to-underline {
+						letter-spacing: 0.05em;
+					}
+				}
+
+
+				img {
+					overflow: hidden;
+					width: 100%;
+					border: 1px solid $refills_border_color;
+					max-height: 500%;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+#section-video {
+	@extend .border-top;
+
+	@include respond-to( xl ) { .img-responsive { width: 100%; height: auto; min-width: 1300px; min-height: 442px; } }
+}
+
+
+
+
+
+
+
+
+//************************************************************************************************
+//************************************************************************************************
+// FORM | HOME
+//************************************************************************************************
+//************************************************************************************************
+.form-horizontal {
+	
+	.form-group {
+		margin-left: 0 !important;
+	    margin-right: 0 !important;
+	}
+	
+}
+
+
+.with-errors {
+
+	ul{
+		li {
+			position: absolute;
+			z-index: 100;
+			top: -25px;
+			left: 20px;
+			background: rgba(255,255,255,0.9);
+			border: 1px solid $form-error-red;
+			padding: 4px 10px;
+			color: $form-error-red;	
+			
+			&:after,
+			&:before {
+			    content: '';
+			    display: block;
+			    position: absolute;
+			    left: 100%;
+			    width: 0;
+			    height: 0;
+			    border-style: solid;
+			}
+
+			/* this border color controlls the color of the triangle (what looks like the fill of the triangle) */
+			&:after {
+			    top: 26px;
+			    left: 2px;
+			    border-color: #FFF transparent transparent transparent;
+			    border-width: 11px;
+			}
+
+			/* this border color controlls the outside, thin border */
+			&:before {
+		        top: 28px;
+			    left: 3px;
+			    border-color: $form-error-red transparent transparent transparent;
+			    border-width: 10px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+//************************************************************************************************
+//************************************************************************************************
+// JUICER | HOME
+//************************************************************************************************
+//************************************************************************************************
+#juicer-home-container {
+	width: 75%;
+	margin: 0 auto;
+}
+
+
+#juicer-main {
+	background: $rc_grey;
+
+	h1 {
+	    position: relative;
+		margin: 90px 0;
+	    top: 40px;
+		text-align: center;
+
+		@include respond-to( xxs ) { font-size: 6vw; }
+		@include respond-to( xs ) { font-size: 5vw; }
+		@include respond-to( sm ) { font-size: 4vw; }
+	}
+
+}
+
+.j-message {
+	display: none;
+}
+
+
+.juicer-feed.loaded {
+    padding: 0 10px;
+}
+
+
+.j-image img {
+	margin-bottom: -10px !important;
+}

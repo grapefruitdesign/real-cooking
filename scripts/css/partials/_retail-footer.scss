@@ -1,0 +1,76 @@
+.retail-section {
+	@extend .border-top;
+
+	position: relative;
+	margin: 0 auto;
+	background: $footer_color;
+
+
+	.row {
+		padding: 50px 0;
+		margin: 0;
+	}
+
+	.content-container {
+		width: 90%;
+		margin: 0 auto;
+
+
+		h2 {
+			margin-bottom: 50px;
+			text-align: center;
+
+			/* @include respond-to( xxs ) { font-size: 2em; }
+			@include respond-to( xs ) { font-size: 2.2em; }
+			@include respond-to( sm ) { font-size: 2.6em; }
+			@include respond-to( md ) { font-size: 2.8em; }
+			@include respond-to( lg ) { font-size: 2.8em; }
+			@include respond-to( xl ) { font-size: 2.8em; } */
+		}
+
+
+		.icon-container {
+			/* position: relative;
+			margin: 0 auto;
+			margin-bottom: 25px;
+			text-align: center; */
+
+
+			ul {
+				margin: 0 auto;
+				padding: 0;
+				width: 100%;
+				max-width: 940px;
+
+
+				li {
+					
+
+					img {
+						// width: 175px;
+						height: 50px;
+						margin: 0 auto 25px auto; 
+
+					}
+
+
+					/* &:nth-child(3) {
+					    margin-top: 10px;
+
+					} */
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+
+#amazon-retailer {
+    top: 10px;
+
+}
